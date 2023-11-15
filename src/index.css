@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+    height: 100%;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    @apply text-gray-500 font-roboto;
+}
+
+.header-bg {
+    background: linear-gradient(114deg, #DF4469 34.37%, #2F5A8C 95.36%);
+}
