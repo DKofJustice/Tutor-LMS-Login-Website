@@ -35,7 +35,7 @@ export default function Register() {
         return toast.error(errors.confirmPassword.message);
       }
   
-      await axios.post("http://localhost:8081/register", {
+      await axios.post( import.meta.env.VITE_API +  "/register", {
         email: data.email,
         password: data.password,
       });

@@ -32,7 +32,7 @@ export default function Login() {
         return toast.error(errors.password.message);
       }
   
-      const response = await axios.post("http://localhost:8081/login", {
+      const response = await axios.post( import.meta.env.VITE_API + "/login", {
         email: data.email,
         password: data.password,
       });
