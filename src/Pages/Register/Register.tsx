@@ -34,9 +34,8 @@ export default function Register() {
       } else if (errors.confirmPassword && errors.confirmPassword.message) {
         return toast.error(errors.confirmPassword.message);
       }
-      console.log(data)
   
-      await axios.post("http://localhost:8081/login", {
+      await axios.post("http://localhost:8081/register", {
         email: data.email,
         password: data.password,
       });
